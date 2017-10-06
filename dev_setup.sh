@@ -95,7 +95,7 @@ install_deps() {
     fi
 }
 
-install_deps
+# install_deps
 
 # Configure to use the standard commit template for
 # this repo only.
@@ -136,7 +136,7 @@ fi
 # create virtualenv, consistent with virtualenv-wrapper conventions
 if [ ! -d "${VIRTUALENV_ROOT}" ]; then
    mkdir -p $(dirname "${VIRTUALENV_ROOT}")
-  virtualenv -p python2.7 "${VIRTUALENV_ROOT}"
+  virtualenv --always-copy --system-site-packages -p python2.7 "${VIRTUALENV_ROOT}"
 fi
 source "${VIRTUALENV_ROOT}/bin/activate"
 cd "${TOP}"

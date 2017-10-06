@@ -1,0 +1,41 @@
+Source: mycroft-core
+Section: utils
+Priority: extra
+Maintainer: KDE neon <neon@kde.org>
+Build-Depends: autoconf,
+               automake,
+               bison,
+               curl,
+               debhelper (>= 9),
+               flac,
+               git,
+               libfann-dev,
+               libffi-dev,
+               libglib2.0-dev,
+               libicu-dev,
+               libjpeg-dev,
+               libssl-dev,
+               libtool,
+               mpg123,
+               pkg-config,
+               portaudio19-dev,
+               python,
+               python-dev,
+               python-gobject-dev,
+               python-setuptools,
+               python-virtualenv,
+               s3cmd,
+               screen,
+               swig,
+               virtualenvwrapper
+Standards-Version: 3.9.3
+
+Package: mycroft-core
+Architecture: any
+Depends: python,
+         python-virtualenv,
+         virtualenvwrapper,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: xx
+ yy
