@@ -11,6 +11,7 @@ cleanNode('8core-amd64') {
   }
   stage('Build') {
     sh '~/tooling/nci/contain.rb rake -f mycroft-core/Rakefile'
+    archiveArtifacts '*.deb'
   }
 }
 
