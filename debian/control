@@ -27,7 +27,8 @@ Build-Depends: autoconf,
                s3cmd,
                screen,
                swig,
-               virtualenvwrapper
+               virtualenvwrapper,
+               libc6:i386
 Standards-Version: 3.9.3
 
 Package: mycroft-core
