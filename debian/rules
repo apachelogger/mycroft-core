@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
-export VIRTUALENV_ROOT := $(PWD)/build/virtualenvs/mycroft
+export VIRTUALENV_ROOT := $(CURDIR)/build/virtualenvs/mycroft
 
-build_dir = $(PWD)/build
+build_dir = $(CURDIR)/build
 sources = $(filter-out debian,$(filter-out build,$(wildcard *)))
 build_artifacts = $(patsubst %,build/%,$(sources))
 
