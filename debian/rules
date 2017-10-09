@@ -18,7 +18,8 @@ override_dh_auto_clean:
 
 override_dh_auto_build: $(build_artifacts)
 	@echo "high there"
-	echo ${WORKON_HOME}
+	echo $(WORKON_HOME)
+	echo $(VIRTUALENV_ROOT)
 	cd build; ./dev_setup.sh --allow-root
 	cd build; virtualenv --relocatable $(VIRTUALENV_ROOT)
 	cd $(VIRTUALENV_ROOT); \
